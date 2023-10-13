@@ -16,6 +16,7 @@ import Taylor from "./images/taylor.jpg";
 import Trump from "./images/trump.jpg";
 
 import "./index.css";
+import Paragraph from "antd/es/skeleton/Paragraph";
 
 const { Title } = Typography;
 
@@ -175,11 +176,10 @@ const App = () => {
           background: "#eee",
           zIndex: 10,
           maxWidth: "1200px",
+          paddingLeft: "30px",
         }}
       >
-        <Title style={{ paddingLeft: "30px", fontSize: "70px" }}>
-          Turing Twest
-        </Title>
+        <Title style={{ fontSize: "70px" }}>🦾 Turing Twest</Title>
         <Menu
           onClick={onClick}
           selectedKeys={[current]}
