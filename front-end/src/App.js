@@ -164,6 +164,8 @@ const App = () => {
         maxWidth: "1200px",
         display: "flex",
         margin: "auto",
+        paddingTop: "0px",
+        marginTop: "0px",
       }}
     >
       <div
