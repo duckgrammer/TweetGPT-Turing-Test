@@ -2,18 +2,18 @@
   font-size: 32px;
 }
 
-.ant-radio-group-large :where(.css-dev-only-do-not-override-1adbn6x).ant-radio-button-wrapper {
-  padding: 20px;
-  padding-bottom: 70px;
-  padding-top: 30px;
-}
-
 span {
   font-size: 40px;
-  padding: 20px;
+  height: 100px;
 }
 
 body {
  background-color: #eee;
  margin: 0;
+}
+
+.ant-radio-group-large :where(.css-dev-only-do-not-override-1adbn6x).ant-radio-button-wrapper {
+  height: auto;
+  font-size: 16px;
+  padding: 30px;
 }
