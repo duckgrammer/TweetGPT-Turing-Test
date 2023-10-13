@@ -15,6 +15,8 @@ import Elon from "./images/elon.jpg";
 import Taylor from "./images/taylor.jpg";
 import Trump from "./images/trump.jpg";
 
+import "./index.css";
+
 const { Title } = Typography;
 
 const App = () => {
@@ -156,17 +158,24 @@ const App = () => {
   ];
 
   return (
-    <div style={{ maxWidth: "1000px", margin: "auto" }}>
+    <div
+      style={{
+        width: "100%",
+        maxWidth: "1200px",
+        display: "flex",
+        margin: "auto",
+      }}
+    >
       <div
         style={{
-          maxWidth: "1000px",
           position: "fixed",
           width: "100%",
           background: "#eee",
           zIndex: 10,
+          maxWidth: "1200px",
         }}
       >
-        <Title level={2} style={{ paddingLeft: "15px" }}>
+        <Title style={{ paddingLeft: "30px", fontSize: "70px" }}>
           Turing Twest
         </Title>
         <Menu
@@ -177,7 +186,7 @@ const App = () => {
           style={{ background: "#eee" }}
         />
       </div>
-      <div style={{ paddingTop: "130px" }}>
+      <div style={{ paddingTop: "220px", width: "100%" }}>
         {tweetList.map((tweet, index) => (
           <Tweet
             key={index}

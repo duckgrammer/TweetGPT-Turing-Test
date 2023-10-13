@@ -1,13 +1,14 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.ant-typography{
+  font-size: 32px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.ant-radio-group-large :where(.css-dev-only-do-not-override-1adbn6x).ant-radio-button-wrapper {
+  padding: 20px;
+  padding-bottom: 70px;
+  padding-top: 30px;
+}
+
+span {
+  font-size: 40px;
+  padding: 20px;
 }

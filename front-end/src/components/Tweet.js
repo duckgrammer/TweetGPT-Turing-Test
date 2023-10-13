@@ -49,9 +49,12 @@ const Tweet = ({ name, username, content, real, changeTarget, uid, image }) => {
       }}
     >
       <Col flex="none">
-        <Avatar size="large" src={image} />
+        <Avatar
+          style={{ width: "110px", height: "110px", margin: "20px" }}
+          src={image}
+        />
       </Col>
-      <Col flex="auto">
+      <Col flex="auto" style={{ paddingTop: "35px" }}>
         <Paragraph>
           {name} <span style={{ color: "#bbb" }}>@{username}</span>
         </Paragraph>
@@ -62,6 +65,7 @@ const Tweet = ({ name, username, content, real, changeTarget, uid, image }) => {
           value={value1}
           optionType="button"
           disabled={value1 !== null}
+          size={"large"}
         />
       </Col>
     </Row>
