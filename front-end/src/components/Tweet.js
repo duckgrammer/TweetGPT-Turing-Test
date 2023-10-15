@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Avatar, Row, Col, Typography, Radio } from "antd";
+import axios from "axios";
 const { Paragraph } = Typography;
 
 const Tweet = ({ name, username, content, real, changeTarget, uid, image }) => {
@@ -10,15 +11,26 @@ const Tweet = ({ name, username, content, real, changeTarget, uid, image }) => {
     setValue1(null);
   }, [changeTarget]);
 
-  const onChange1 = (value) => {
-    const ans = value.target.value;
+  const onChange1 = async (e) => {
+    const ans = e.target.value;
     setValue1(ans);
-    console.log({
+    const data = {
       uid: uid,
       tweeter: name,
-      real: real,
-      correct: (real && ans === "Real 👨🏻") || (!real && ans === "AI 🤖"),
-    });
+      content: content,
+      answer_key: real ? "Real 👨🏻" : "AI 🤖",
+      user_answer: ans,
+      created: new Date(),
+    };
+
+    await axios
+      .post(
+        "https://sheet.best/api/sheets/2c2af8f5-7221-4a07-bb0e-045e2e227622",
+        data
+      )
+      .then((response) => {
+        console.log(response);
+      });
   };
 
   return (
