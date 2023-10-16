@@ -62,8 +62,23 @@ const App = () => {
         tweets.push({ tweet: FakeElon[j].tweet, real: false });
       }
       for (let i = 0; i < 5; i++) {
-        let j = Math.floor(Math.random() * (RealElon.length - 1));
-        tweets.push({ tweet: RealElon[j].tweet, real: true });
+        let tweetLen = 0;
+        let tweet = "";
+        while (
+          tweetLen <= 30 ||
+          tweet.includes("http") ||
+          (tweetLen > 0 &&
+            tweet.charAt(0).toLocaleLowerCase() ===
+              tweet.charAt(0).toLocaleUpperCase())
+        ) {
+          let j = Math.floor(Math.random() * (RealElon.length - 1));
+          tweet = RealElon[j].tweet.replace(/@\w+/g, "");
+          tweetLen = tweet.length;
+        }
+        tweets.push({
+          tweet: tweet,
+          real: true,
+        });
       }
     } else if (current === "trump") {
       for (let i = 0; i < 5; i++) {
@@ -71,8 +86,24 @@ const App = () => {
         tweets.push({ tweet: FakeTrump[j].text, real: false });
       }
       for (let i = 0; i < 5; i++) {
-        let j = Math.floor(Math.random() * (RealTrump.length - 1));
-        tweets.push({ tweet: RealTrump[j].content, real: true });
+        let tweetLen = 0;
+        let tweet = "";
+        while (
+          tweetLen <= 30 ||
+          tweet.includes("http") ||
+          (tweetLen > 0 &&
+            tweet.charAt(0).toLocaleLowerCase() ===
+              tweet.charAt(0).toLocaleUpperCase())
+        ) {
+          let j = Math.floor(Math.random() * (RealTrump.length - 1));
+          tweet = RealTrump[j].content.replace(/@\s\w+/g, "");
+          tweet = tweet.replace(/@\w+/g, "");
+          tweetLen = tweet.length;
+        }
+        tweets.push({
+          tweet: tweet,
+          real: true,
+        });
       }
     } else {
       for (let i = 0; i < 5; i++) {
@@ -80,8 +111,24 @@ const App = () => {
         tweets.push({ tweet: FakeTaylor[j].tweet, real: false });
       }
       for (let i = 0; i < 5; i++) {
-        let j = Math.floor(Math.random() * (RealTaylor.length - 1));
-        tweets.push({ tweet: RealTaylor[j].content, real: true });
+        let tweetLen = 0;
+        let tweet = "";
+        while (
+          tweetLen <= 30 ||
+          tweet.includes("http") ||
+          tweet.includes("@") ||
+          (tweetLen > 0 &&
+            tweet.charAt(0).toLocaleLowerCase() ===
+              tweet.charAt(0).toLocaleUpperCase())
+        ) {
+          let j = Math.floor(Math.random() * (RealTaylor.length - 1));
+          tweet = RealTaylor[j].content;
+          tweetLen = tweet.length;
+        }
+        tweets.push({
+          tweet: tweet,
+          real: true,
+        });
       }
     }
     shuffleArray(tweets);
