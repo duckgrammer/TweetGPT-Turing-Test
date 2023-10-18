@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { UserOutlined } from "@ant-design/icons";
 import { Avatar, Row, Col, Typography, Radio } from "antd";
 const { Paragraph } = Typography;
 
