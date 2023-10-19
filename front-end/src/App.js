@@ -1,12 +1,20 @@
 import { Typography, Menu } from "antd";
 import { useEffect, useState } from "react";
 import Tweet from "./components/Tweet";
+
+// Tweet Data Set
 import FakeElon from "./Tweets/fakeElon.json";
 import RealElon from "./Tweets/realElon.json";
 import FakeTrump from "./Tweets/fakeDonald.json";
 import RealTrump from "./Tweets/realDonald.json";
 import FakeTaylor from "./Tweets/fakeTaylor.json";
 import RealTaylor from "./Tweets/realTaylor.json";
+
+// Imagew
+import Elon from "./images/elon.jpg";
+import Taylor from "./images/taylor.jpg";
+import Trump from "./images/trump.jpg";
+
 const { Title } = Typography;
 
 const App = () => {
@@ -33,6 +41,7 @@ const App = () => {
   const [tweetList, setTweetList] = useState([]);
   const [current, setCurrent] = useState("elon");
   const [changeTarget, setChangeTarget] = useState(0);
+  const [uid, setUid] = useState(0);
 
   function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -40,6 +49,10 @@ const App = () => {
       [array[i], array[j]] = [array[j], array[i]];
     }
   }
+
+  useEffect(() => {
+    setUid(Math.floor(Math.random() * 1000000));
+  }, []);
 
   useEffect(() => {
     let tweets = [];
@@ -132,6 +145,10 @@ const App = () => {
             content={tweet.tweet}
             real={tweet.real}
             changeTarget={changeTarget}
+            uid={uid}
+            image={
+              current === "elon" ? Elon : current === "trump" ? Trump : Taylor
+            }
           />
         ))}
       </div>

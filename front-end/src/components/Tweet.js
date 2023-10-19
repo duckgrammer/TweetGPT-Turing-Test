@@ -3,7 +3,7 @@ import { UserOutlined } from "@ant-design/icons";
 import { Avatar, Row, Col, Typography, Radio } from "antd";
 const { Paragraph } = Typography;
 
-const Tweet = ({ name, username, content, real, changeTarget }) => {
+const Tweet = ({ name, username, content, real, changeTarget, uid, image }) => {
   const [value1, setValue1] = useState(null);
   const plainOptions = ["AI 🤖", "Real 👨🏻"];
 
@@ -12,7 +12,14 @@ const Tweet = ({ name, username, content, real, changeTarget }) => {
   }, [changeTarget]);
 
   const onChange1 = (value) => {
-    setValue1(value.target.value);
+    const ans = value.target.value;
+    setValue1(ans);
+    console.log({
+      uid: uid,
+      tweeter: name,
+      real: real,
+      correct: (real && ans === "Real 👨🏻") || (!real && ans === "AI 🤖"),
+    });
   };
 
   return (
@@ -31,7 +38,7 @@ const Tweet = ({ name, username, content, real, changeTarget }) => {
       }}
     >
       <Col flex="none">
-        <Avatar size="large" icon={<UserOutlined />} />
+        <Avatar size="large" src={image} />
       </Col>
       <Col flex="auto">
         <Paragraph>
