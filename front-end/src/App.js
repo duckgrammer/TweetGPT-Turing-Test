@@ -32,6 +32,7 @@ const App = () => {
 */
   const [tweetList, setTweetList] = useState([]);
   const [current, setCurrent] = useState("elon");
+  const [changeTarget, setChangeTarget] = useState(0);
 
   function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -45,29 +46,29 @@ const App = () => {
     if (current === "elon") {
       for (let i = 0; i < 5; i++) {
         let j = Math.floor(Math.random() * (FakeElon.length - 1));
-        tweets.push({ tweet: FakeElon[j].tweet, real: true });
+        tweets.push({ tweet: FakeElon[j].tweet, real: false });
       }
       for (let i = 0; i < 5; i++) {
         let j = Math.floor(Math.random() * (RealElon.length - 1));
-        tweets.push({ tweet: RealElon[j].tweet, real: false });
+        tweets.push({ tweet: RealElon[j].tweet, real: true });
       }
     } else if (current === "trump") {
       for (let i = 0; i < 5; i++) {
         let j = Math.floor(Math.random() * (FakeTrump.length - 1));
-        tweets.push({ tweet: FakeTrump[j].text, real: true });
+        tweets.push({ tweet: FakeTrump[j].text, real: false });
       }
       for (let i = 0; i < 5; i++) {
         let j = Math.floor(Math.random() * (RealTrump.length - 1));
-        tweets.push({ tweet: RealTrump[j].content, real: false });
+        tweets.push({ tweet: RealTrump[j].content, real: true });
       }
     } else {
       for (let i = 0; i < 5; i++) {
         let j = Math.floor(Math.random() * (FakeTaylor.length - 1));
-        tweets.push({ tweet: FakeTaylor[j].tweet, real: true });
+        tweets.push({ tweet: FakeTaylor[j].tweet, real: false });
       }
       for (let i = 0; i < 5; i++) {
         let j = Math.floor(Math.random() * (RealTaylor.length - 1));
-        tweets.push({ tweet: RealTaylor[j].content, real: false });
+        tweets.push({ tweet: RealTaylor[j].content, real: true });
       }
     }
     shuffleArray(tweets);
@@ -76,6 +77,7 @@ const App = () => {
 
   const onClick = (e) => {
     setCurrent(e.key);
+    setChangeTarget(changeTarget + 1);
   };
 
   const items = [
@@ -128,13 +130,10 @@ const App = () => {
             }
             username={current}
             content={tweet.tweet}
+            real={tweet.real}
+            changeTarget={changeTarget}
           />
         ))}
-      </div>
-      <div style={{ padding: "12px" }}>
-        <Button type="primary" block size="large">
-          Submit
-        </Button>
       </div>
     </div>
   );
