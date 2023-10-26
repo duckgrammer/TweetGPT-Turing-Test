@@ -133,7 +133,7 @@ const App = () => {
       </div>
       <div style={{ padding: "12px" }}>
         <Button type="primary" block size="large">
-          Submitc
+          Submit
         </Button>
       </div>
     </div>
