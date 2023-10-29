@@ -3,6 +3,10 @@ import { useEffect, useState } from "react";
 import Tweet from "./components/Tweet";
 import FakeElon from "./Tweets/fakeElon.json";
 import RealElon from "./Tweets/realElon.json";
+import FakeTrump from "./Tweets/fakeDonald.json";
+import RealTrump from "./Tweets/realDonald.json";
+import FakeTaylor from "./Tweets/fakeTaylor.json";
+import RealTaylor from "./Tweets/realTaylor.json";
 const { Title } = Typography;
 
 const App = () => {
@@ -37,8 +41,8 @@ const App = () => {
   }
 
   useEffect(() => {
+    let tweets = [];
     if (current === "elon") {
-      let tweets = [];
       for (let i = 0; i < 5; i++) {
         let j = Math.floor(Math.random() * (FakeElon.length - 1));
         tweets.push({ tweet: FakeElon[j].tweet, real: true });
@@ -47,21 +51,27 @@ const App = () => {
         let j = Math.floor(Math.random() * (RealElon.length - 1));
         tweets.push({ tweet: RealElon[j].tweet, real: false });
       }
-      shuffleArray(tweets);
-      setTweetList(tweets);
+    } else if (current === "trump") {
+      for (let i = 0; i < 5; i++) {
+        let j = Math.floor(Math.random() * (FakeTrump.length - 1));
+        tweets.push({ tweet: FakeTrump[j].text, real: true });
+      }
+      for (let i = 0; i < 5; i++) {
+        let j = Math.floor(Math.random() * (RealTrump.length - 1));
+        tweets.push({ tweet: RealTrump[j].content, real: false });
+      }
     } else {
-      let tweets = [];
       for (let i = 0; i < 5; i++) {
-        let j = Math.floor(Math.random() * (FakeElon.length - 1));
-        tweets.push({ tweet: FakeElon[j].tweet, real: true });
+        let j = Math.floor(Math.random() * (FakeTaylor.length - 1));
+        tweets.push({ tweet: FakeTaylor[j].tweet, real: true });
       }
       for (let i = 0; i < 5; i++) {
-        let j = Math.floor(Math.random() * (RealElon.length - 1));
-        tweets.push({ tweet: RealElon[j].tweet, real: false });
+        let j = Math.floor(Math.random() * (RealTaylor.length - 1));
+        tweets.push({ tweet: RealTaylor[j].content, real: false });
       }
-      shuffleArray(tweets);
-      setTweetList(tweets);
     }
+    shuffleArray(tweets);
+    setTweetList(tweets);
   }, [current]);
 
   const onClick = (e) => {
