@@ -13,12 +13,13 @@ const Tweet = ({ name, username, content }) => {
 
   return (
     <Row
+      wrap={false}
       style={{ borderBottom: "1px solid #eee", padding: "20px", gap: "20px" }}
     >
-      <Col>
+      <Col flex="none">
         <Avatar size="large" icon={<UserOutlined />} />
       </Col>
-      <Col>
+      <Col flex="auto">
         <Paragraph>
           {name} <span style={{ color: "#bbb" }}>@{username}</span>
         </Paragraph>
