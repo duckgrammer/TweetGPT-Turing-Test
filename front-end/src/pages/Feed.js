@@ -1,3 +1,8 @@
+import { Typography, Col, Row, Button } from "antd";
+import { useNavigate } from "react-router-dom";
+import Tweet from "../components/Tweet";
+const { Paragraph } = Typography;
+
 const Feed = () => {
   const getTweet = async () => {
     const options = {
@@ -18,7 +23,31 @@ const Feed = () => {
     }
   };
   return (
-    <div>
+    <div style={{ maxWidth: "500px" }}>
+      <div
+        style={{
+          textAlign: "center",
+          paddingInline: "20px",
+          paddingBlock: "5px",
+          borderBottom: "1px solid #ccc",
+        }}
+      >
+        <Paragraph strong>
+          Tap the profile picture to mark your answers
+        </Paragraph>
+        <Row>
+          <Col span={12}>🤖 x0</Col>
+          <Col span={12}>👨🏻 x0</Col>
+        </Row>
+      </div>
+      <Tweet name="Elon Musk" username="ElonMusk" content="I like cats" />
+      <Tweet name="Elon Musk" username="ElonMusk" content="I like dogs" />
+
+      <div style={{ padding: "12px" }}>
+        <Button type="primary" block size="large">
+          Submit
+        </Button>
+      </div>
       <button id="submit" onClick={getTweet}>
         New Tweet
       </button>

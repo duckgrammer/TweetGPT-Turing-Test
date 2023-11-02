@@ -25,13 +25,13 @@ const Home = () => {
       <Button block size="large" onClick={routeChange}>
         Elon Musk 🚀
       </Button>
-      <Button block size="large">
+      <Button block size="large" onClick={routeChange}>
         Kanye West 🎤
       </Button>
-      <Button block size="large">
+      <Button block size="large" onClick={routeChange}>
         Donald Trump ✈️
       </Button>
-      <Button type="primary" block size="large">
+      <Button type="primary" block size="large" onClick={routeChange}>
         FRENZY 🔥🔥🔥
       </Button>
     </div>
