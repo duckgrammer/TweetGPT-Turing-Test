@@ -22,7 +22,7 @@ const Home = () => {
       }}
     >
       <Title>Turing Twest</Title>
-      <Button block size="large" to="/feed" onClick={routeChange}>
+      <Button block size="large" onClick={routeChange}>
         Elon Musk 🚀
       </Button>
       <Button block size="large">
