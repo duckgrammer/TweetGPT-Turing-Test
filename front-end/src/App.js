@@ -1,27 +1,14 @@
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Feed from "./pages/Feed";
+
 function App() {
-  const getTweet = async () => {
-    const options = {
-      method: "POST",
-      body: JSON.stringify({
-        message: "give me one tweet in the style of elon musk",
-      }),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    };
-    try {
-      const res = await fetch("http://localhost:8000/TweetGPT", options);
-      const data = await res.json();
-      console.log(data);
-    } catch (error) {
-      console.error(error);
-    }
-  };
   return (
-    <div>
-      <button id="submit" onClick={getTweet}>
-        New Tweet
-      </button>
+    <div className="App">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="feed" element={<Feed />} />\
+      </Routes>
     </div>
   );
 }
