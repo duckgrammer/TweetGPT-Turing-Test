@@ -1,13 +1,15 @@
 const PORT = 8000;
 const express = require("express");
+const dotenv = require("dotenv");
 const cors = require("cors");
 const app = express();
 app.use(express.json());
 app.use(cors());
 
-const API_KEY = "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";
+require("dotenv").config();
+const API_KEY = process.env.API_KEY;
 
-app.post("/TweetGPT", async (req, res) => {
+app.post("/TweetGPT/:author", async (req, res) => {
   const options = {
     method: "POST",
     headers: {
@@ -19,7 +21,7 @@ app.post("/TweetGPT", async (req, res) => {
       messages: [
         {
           role: "user",
-          content: "can you give me 10 made up tweets by elon musk",
+          content: `give me ten made up tweets in the style of ${req.params.author}`,
         },
       ],
       max_tokens: 100,
@@ -27,7 +29,7 @@ app.post("/TweetGPT", async (req, res) => {
   };
   try {
     const response = await fetch(
-      "\n" + "https://api.openai.com/v1/chat/completions",
+      "https://api.openai.com/v1/chat/completions",
       options
     );
     const data = await response.json();
