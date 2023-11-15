@@ -1,4 +1,4 @@
-import { Typography, Button, Menu } from "antd";
+import { Typography, Menu } from "antd";
 import { useEffect, useState } from "react";
 import Tweet from "./components/Tweet";
 import FakeElon from "./Tweets/fakeElon.json";
