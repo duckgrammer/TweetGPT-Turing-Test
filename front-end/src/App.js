@@ -156,10 +156,10 @@ const App = () => {
   ];
 
   return (
-    <div style={{ maxWidth: "500px", margin: "auto" }}>
+    <div style={{ maxWidth: "1000px", margin: "auto" }}>
       <div
         style={{
-          maxWidth: "500px",
+          maxWidth: "1000px",
           position: "fixed",
           width: "100%",
           background: "#eee",
