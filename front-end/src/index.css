@@ -12,7 +12,7 @@ body {
  margin: 0;
 }
 
-.ant-radio-group-large :where(.css-dev-only-do-not-override-1adbn6x).ant-radio-button-wrapper {
+.ant-radio-button-wrapper {
   height: auto;
   font-size: 16px;
   padding: 30px;

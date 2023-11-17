@@ -65,7 +65,6 @@ const Tweet = ({ name, username, content, real, changeTarget, uid, image }) => {
           value={value1}
           optionType="button"
           disabled={value1 !== null}
-          size={"large"}
         />
       </Col>
     </Row>
