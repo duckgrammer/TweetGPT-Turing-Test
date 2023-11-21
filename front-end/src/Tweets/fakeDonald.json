@@ -1,97 +1,232 @@
 [
-    {
-      "created_at": "Tue Nov 14 20:05:00 CST 2023",
-      "id": 159234567890123456,
-      "text": "The Fake News Media is spreading lies about me again! They're saying I'm not fit to be President, but I'm the best President America has ever had! #MAGA"
-    },
-    {
-      "created_at": "Tue Nov 14 20:06:00 CST 2023",
-      "id": 159234567890123457,
-      "text": "The Sleepy Joe Biden Administration is a complete disaster! They're destroying our economy and making America weak again. #AmericaFirst"
-    },
-    {
-      "created_at": "Tue Nov 14 20:07:00 CST 2023",
-      "id": 159234567890123458,
-      "text": "The Radical Left Democrats are trying to take away your guns! They want to destroy our Second Amendment rights. #StandWithTrump"
-    },
-    {
-      "created_at": "Tue Nov 14 20:08:00 CST 2023",
-      "id": 159234567890123459,
-      "text": "The economy is booming under my leadership! We have the lowest unemployment rate in history and the stock market is at record highs. #KeepAmericaGreat"
-    },
-    {
-      "created_at": "Tue Nov 14 20:09:00 CST 2023",
-      "id": 159234567890123460,
-      "text": "The Democrats are weak on immigration! They're letting millions of illegal immigrants into our country and they're not doing anything to stop them. #BuildTheWall"
-    },
-    {
-      "created_at": "Tue Nov 14 20:10:00 CST 2023",
-      "id": 159234567890123461,
-      "text": "The Democrats are also weak on crime! They're letting criminals run rampant in our cities and they're not doing anything to protect our law enforcement officers. #LawAndOrder"
-    },
-    {
-      "created_at": "Tue Nov 14 20:11:00 CST 2023",
-      "id": 159234567890123462,
-      "text": "The Democrats are a disaster for America! They're socialists who want to destroy our country. #NeverTrump"
-    },
-    {
-      "created_at": "Tue Nov 14 20:12:00 CST 2023",
-      "id": 159234567890123463,
-      "text": "I'm the only one who can save America! I'm the only one who can make America great again! #MAGA2024"
-    },
-    {
-      "created_at": "Tue Nov 14 20:13:00 CST 2023",
-      "id": 159234567890123464,
-      "text": "Thank you for your support! #Winning"
-    },
-    {
-        "created_at": "Tue Nov 14 20:14:00 CST 2023",
-        "id": 159234567890123465,
-        "text": "The Fake News Media is so biased against me! They're always trying to find a way to make me look bad. But I'm not worried because the American people know the truth. #FakeNewsMedia"
-      },
-      {
-        "created_at": "Tue Nov 14 20:15:00 CST 2023",
-        "id": 159234567890123466,
-        "text": "The Democrats are so obsessed with impeaching me that they're willing to destroy our country. They're putting their own political interests ahead of the needs of the American people. #WitchHunt"
-      },
-      {
-        "created_at": "Tue Nov 14 20:16:00 CST 2023",
-        "id": 159234567890123467,
-        "text": "I'm the only one who can stand up to the radical Left Democrats. I'm the only one who can keep America safe and prosperous. #Trump2024"
-      },
-      {
-        "created_at": "Tue Nov 14 20:17:00 CST 2023",
-        "id": 159234567890123468,
-        "text": "I'm the most successful President in American history! I've created millions of jobs, I've cut taxes, and I've defeated ISIS. #PromisesMadePromisesKept"
-      },
-      {
-        "created_at": "Tue Nov 14 20:18:00 CST 2023",
-        "id": 159234567890123469,
-        "text": "The Democrats are socialists who want to take away your freedom! They want to control your life and they want to destroy our economy. #SocialismIsFailure"
-      },
-      {
-        "created_at": "Tue Nov 14 20:19:00 CST 2023",
-        "id": 159234567890123470,
-        "text": "The Democrats are also weak on trade! They're letting China cheat us and they're not doing anything to protect American jobs. #FairTrade"
-      },
-      {
-        "created_at": "Tue Nov 14 20:20:00 CST 2023",
-        "id": 159234567890123471,
-        "text": "The Democrats are a disaster for America! They're socialists who want to destroy our country. #NeverBiden"
-      },
-      {
-        "created_at": "Tue Nov 14 20:21:00 CST 2023",
-        "id": 159234567890123472,
-        "text": "I'm the only one who can save America! I'm the only one who can make America great again! #MAGA2024"
-      },
-      {
-        "created_at": "Tue Nov 14 20:22:00 CST 2023",
-        "id": 159234567890123473,
-        "text": "Thank you for your support! #Winning"
-      },
-      {
-        "created_at": "Tue Nov 14 20:23:00 CST 2023",
-        "id": 159234567890123474,
-        "text": "I'm the best President America has ever had! #Winning"
-      }
-  ]  
+  {
+  "created_at": "Tue Nov 14 20:05:00 CST 2023",
+  "id": 159234567890123456,
+  "text": "The Fake News Media is spreading lies about me again! They're saying I'm not fit to be President, but I'm the best President America has ever had! #MAGA"
+  },
+  {
+  "created_at": "Tue Nov 14 20:06:00 CST 2023",
+  "id": 159234567890123457,
+  "text": "The Sleepy Joe Biden Administration is a complete disaster! They're destroying our economy and making America weak again. #AmericaFirst"
+  },
+  {
+  "created_at": "Tue Nov 14 20:07:00 CST 2023",
+  "id": 159234567890123458,
+  "text": "The Radical Left Democrats are trying to take away your guns! They want to destroy our Second Amendment rights. #StandWithTrump"
+  },
+  {
+  "created_at": "Tue Nov 14 20:08:00 CST 2023",
+  "id": 159234567890123459,
+  "text": "The economy is booming under my leadership! We have the lowest unemployment rate in history and the stock market is at record highs. #KeepAmericaGreat"
+  },
+  {
+  "created_at": "Tue Nov 14 20:09:00 CST 2023",
+  "id": 159234567890123460,
+  "text": "The Democrats are weak on immigration! They're letting millions of illegal immigrants into our country and they're not doing anything to stop them. #BuildTheWall"
+  },
+  {
+  "created_at": "Tue Nov 14 20:10:00 CST 2023",
+  "id": 159234567890123461,
+  "text": "The Democrats are also weak on crime! They're letting criminals run rampant in our cities and they're not doing anything to protect our law enforcement officers. #LawAndOrder"
+  },
+  {
+  "created_at": "Tue Nov 14 20:11:00 CST 2023",
+  "id": 159234567890123462,
+  "text": "The Democrats are a disaster for America! They're socialists who want to destroy our country. #NeverTrump"
+  },
+  {
+  "created_at": "Tue Nov 14 20:12:00 CST 2023",
+  "id": 159234567890123463,
+  "text": "I'm the only one who can save America! I'm the only one who can make America great again! #MAGA2024"
+  },
+  {
+  "created_at": "Tue Nov 14 20:13:00 CST 2023",
+  "id": 159234567890123464,
+  "text": "Thank you for your support! #Winning"
+  },
+  {
+    "created_at": "Tue Nov 14 20:14:00 CST 2023",
+    "id": 159234567890123465,
+    "text": "The Fake News Media is so biased against me! They're always trying to find a way to make me look bad. But I'm not worried because the American people know the truth. #FakeNewsMedia"
+  },
+  {
+    "created_at": "Tue Nov 14 20:15:00 CST 2023",
+    "id": 159234567890123466,
+    "text": "The Democrats are so obsessed with impeaching me that they're willing to destroy our country. They're putting their own political interests ahead of the needs of the American people. #WitchHunt"
+  },
+  {
+    "created_at": "Tue Nov 14 20:16:00 CST 2023",
+    "id": 159234567890123467,
+    "text": "I'm the only one who can stand up to the radical Left Democrats. I'm the only one who can keep America safe and prosperous. #Trump2024"
+  },
+  {
+    "created_at": "Tue Nov 14 20:17:00 CST 2023",
+    "id": 159234567890123468,
+    "text": "I'm the most successful President in American history! I've created millions of jobs, I've cut taxes, and I've defeated ISIS. #PromisesMadePromisesKept"
+  },
+  {
+    "created_at": "Tue Nov 14 20:18:00 CST 2023",
+    "id": 159234567890123469,
+    "text": "The Democrats are socialists who want to take away your freedom! They want to control your life and they want to destroy our economy. #SocialismIsFailure"
+  },
+  {
+    "created_at": "Tue Nov 14 20:19:00 CST 2023",
+    "id": 159234567890123470,
+    "text": "The Democrats are also weak on trade! They're letting China cheat us and they're not doing anything to protect American jobs. #FairTrade"
+  },
+  {
+    "created_at": "Tue Nov 14 20:20:00 CST 2023",
+    "id": 159234567890123471,
+    "text": "The Democrats are a disaster for America! They're socialists who want to destroy our country. #NeverBiden"
+  },
+  {
+    "created_at": "Tue Nov 14 20:21:00 CST 2023",
+    "id": 159234567890123472,
+    "text": "I'm the only one who can save America! I'm the only one who can make America great again! #MAGA2024"
+  },
+  {
+    "created_at": "Tue Nov 14 20:22:00 CST 2023",
+    "id": 159234567890123473,
+    "text": "Thank you for your support! #Winning"
+  },
+  {
+    "created_at": "Tue Nov 14 20:23:00 CST 2023",
+    "id": 159234567890123474,
+    "text": "I'm the best President America has ever had! #Winning"
+  },
+  {
+    "created_at": "Tue Nov 14 20:22:00 CST 2023",
+    "id": 159234567890123473,
+    "text": "Just had a tremendous meeting with world leaders. They all love me, believe me! #MAGA"
+  },
+  {
+    "created_at": "Tue Nov 14 20:23:00 CST 2023",
+    "id": 159234567890123474,
+    "text": "Fake news is at it again! They can't handle my success. Sad! #FakeNews"
+  },
+  {
+    "created_at": "Tue Nov 14 20:24:00 CST 2023",
+    "id": 159234567890123475,
+    "text": "Nobody builds walls better than me. Nobody. And I'll make them pay for it! #BuildTheWall"
+  },
+  {
+    "created_at": "Tue Nov 14 20:25:00 CST 2023",
+    "id": 159234567890123476,
+    "text": "Just had the best hamburger. It was huge! Like everything I do. #BigAndTasty"
+  },
+  {
+    "created_at": "Tue Nov 14 20:26:00 CST 2023",
+    "id": 159234567890123477,
+    "text": "The stock market is soaring because of me. The best economy ever, believe me! #EconomicBoom"
+  },
+  {
+    "created_at": "Tue Nov 14 20:27:00 CST 2023",
+    "id": 159234567890123478,
+    "text": "I'm a stable genius, folks. No one can deny it. #StableGenius"
+  },
+  {
+    "created_at": "Tue Nov 14 20:28:00 CST 2023",
+    "id": 159234567890123479,
+    "text": "Just signed a tremendous trade deal. America first, always! #AmericaFirst"
+  },
+  {
+    "created_at": "Tue Nov 14 20:29:00 CST 2023",
+    "id": 159234567890123480,
+    "text": "The Democrats are a disaster. They can't win against me. #LosingBigly"
+  },
+  {
+    "created_at": "Tue Nov 14 20:30:00 CST 2023",
+    "id": 159234567890123481,
+    "text": "Had the best golf game today. I'm the greatest golfer, believe me! #GolfPro"
+  },
+  {
+    "created_at": "Tue Nov 14 20:31:00 CST 2023",
+    "id": 159234567890123482,
+    "text": "Crooked Hillary is still upset she lost. Get over it! #HillaryForPrison"
+  },
+  {
+    "created_at": "Tue Nov 14 20:32:00 CST 2023",
+    "id": 159234567890123483,
+    "text": "I'm a ratings machine. People love me. #HighRatings"
+  },
+  {
+    "created_at": "Tue Nov 14 20:33:00 CST 2023",
+    "id": 159234567890123484,
+    "text": "Nobody respects women more than I do. Nobody. #RespectWomen"
+  },
+  {
+    "created_at": "Tue Nov 14 20:34:00 CST 2023",
+    "id": 159234567890123485,
+    "text": "Just had a great meeting with Kim Jong Un. We're making progress! #PeaceInOurTime"
+  },
+  {
+    "created_at": "Tue Nov 14 20:35:00 CST 2023",
+    "id": 159234567890123486,
+    "text": "I'm not a puppet. I'm a very stable genius. #NoCollusion"
+  },
+  {
+    "created_at": "Tue Nov 14 20:36:00 CST 2023",
+    "id": 159234567890123487,
+    "text": "The media is the enemy of the people. They can't handle the truth! #FakeNewsMedia"
+  },
+  {
+    "created_at": "Tue Nov 14 20:37:00 CST 2023",
+    "id": 159234567890123488,
+    "text": "I've accomplished more in my first term than any other president in history. #HistoricAchievements"
+  },
+  {
+    "created_at": "Tue Nov 14 20:38:00 CST 2023",
+    "id": 159234567890123489,
+    "text": "The border is secure because of me. No one does it better! #SecureTheBorder"
+  },
+  {
+    "created_at": "Tue Nov 14 20:39:00 CST 2023",
+    "id": 159234567890123490,
+    "text": "I have the best words. Nobody has better words than me. #BestWords"
+  },
+  {
+    "created_at": "Tue Nov 14 20:40:00 CST 2023",
+    "id": 159234567890123491,
+    "text": "Just had a fantastic rally. The crowds love me. #Trump2024"
+  },
+  {
+    "created_at": "Tue Nov 14 20:41:00 CST 2023",
+    "id": 159234567890123492,
+    "text": "I'm the king of Twitter. No one tweets better than me. #TwitterKing"
+  },
+  {
+    "created_at": "Tue Nov 14 20:42:00 CST 2023",
+    "id": 159234567890123493,
+    "text": "Nobody fights for America like I do. Nobody. #AmericaFirst"
+  },
+  {
+    "created_at": "Tue Nov 14 20:43:00 CST 2023",
+    "id": 159234567890123494,
+    "text": "Just signed a historic peace deal. I'm a peacemaker! #PeaceThroughStrength"
+  },
+  {
+    "created_at": "Tue Nov 14 20:44:00 CST 2023",
+    "id": 159234567890123495,
+    "text": "I'm the best negotiator. Ask anyone. #ArtOfTheDeal"
+  },
+  {
+    "created_at": "Tue Nov 14 20:45:00 CST 2023",
+    "id": 159234567890123496,
+    "text": "I always put America first. Always. #AmericaFirst"
+  },
+  {
+    "created_at": "Tue Nov 14 20:46:00 CST 2023",
+    "id": 159234567890123497,
+    "text": "The swamp is still not drained, but I'm working on it. #Drain"
+  },
+  {
+    "created_at": "Tue Nov 14 21:37:00 CST 2023",
+    "id": 159234567890123547,
+    "text": "The haters and losers keep doubting me, but I always prove them wrong."
+  },
+  {
+    "created_at": "Tue Nov 14 21:38:00 CST 2023",
+    "id": 159234567890123548,
+    "text": "I have the best hair. Nobody has better hair than me. It's a fact!"
+  }
+]
